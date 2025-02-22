@@ -6,12 +6,13 @@ export const SITE: Site = {
   profile: "https://joypaulsen.com/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "Deconvoluted",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "assets/pixellated_gradient.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-  showArchives: true,
+  // showArchives: true,
+  showArchives: false,
   editPost: {
     url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
     text: "Suggest Changes",
