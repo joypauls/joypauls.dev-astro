@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
   author: "Joy Paulsen",
   profile: "https://joypaulsen.com/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "Understanding the science of modern photography.",
   title: "Deconvoluted",
   ogImage: "assets/pixellated_gradient.jpg",
   lightAndDarkMode: true,
