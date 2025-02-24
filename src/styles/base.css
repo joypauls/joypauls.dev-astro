@@ -115,6 +115,11 @@
     font-weight: var(--shiki-dark-font-weight) !important;
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
+
+  /* limit size of images in posts */
+  .prose img {
+    @apply max-h-[500px] w-auto;
+  }
 }
 
 @layer components {
@@ -125,3 +130,5 @@
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
 }
+
+
