@@ -1,14 +1,14 @@
 ---
 author: Joy Paulsen
-pubDatetime: 2025-02-23T19:00:00Z
-title: Understanding HDR
-slug: understanding-hdr
+pubDatetime: 2025-02-24T19:00:00Z
+title: Smartphones and Computational Photography
+slug: smartphone-cameras
 featured: true
 draft: false
 tags:
   - computational photography
 description:
-  An overview of the science and techniques behind high-dynamic range (HDR) photography.
+  How smartphone cameras overcome their limitations to produce good images.
 ---
 
 ## Table of contents
