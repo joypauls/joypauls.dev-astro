@@ -11,7 +11,7 @@ description:
   How smartphone cameras overcome their limitations to produce good images.
 ---
 
-## Table of contents
+## Table of Contents
 
 ## HDR Workflow
 

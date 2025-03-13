@@ -11,7 +11,7 @@ description:
   An overview of the science and techniques behind high-dynamic range (HDR) photography.
 ---
 
-## Table of contents
+## Table of Contents
 
 ## HDR Workflow
 

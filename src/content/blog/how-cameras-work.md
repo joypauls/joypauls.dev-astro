@@ -7,17 +7,18 @@ featured: true
 draft: false
 tags:
   - beginner
+  - photography
 description:
   Find out how the core components of a digital camera come together to create images. 
 ---
 
-## Table of contents
+## Table of Contents
+
 
 ## HDR Workflow
 
-1. Exposure Bracketing
-2. Merging
-3. Tone Mapping
+![something](@assets/blog/how-cameras-work/camera_diagram.png)
+
 
 ## Exposure Bracketing
 

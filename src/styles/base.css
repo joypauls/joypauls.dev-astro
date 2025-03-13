@@ -119,6 +119,7 @@
   /* limit size of images in posts */
   .prose img {
     @apply max-h-[500px] w-auto;
+    border-width: 1px;
   }
 }
 
