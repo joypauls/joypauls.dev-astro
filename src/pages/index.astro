@@ -23,8 +23,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Welcome</h1>
-      <a
+      <!-- <h1>Welcome!</h1> -->
+      <!-- <a
         target="_blank"
         href="/rss.xml"
         class="rss-link"
@@ -39,12 +39,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
         <span class="sr-only">RSS Feed</span>
-      </a>
+      </a> -->
 
-      <img src="/assets/pixellated_gradient.jpg" alt="pixellated gradient" />
+      <img src="/assets/DSC05914.jpg" alt="mountain" />
 
       <p>
-        Modern photography isn’t just about light and lenses &#8212; it’s powered by data, algorithms, and computational techniques. Whether you're using a smartphone camera or a high-end scientific instrument, every image is shaped by layers of processing and optimization. This space explores the science behind photography, image processing, and computer vision, breaking down the techniques that turn photons into photos.
+        Writing about my interests at the intersection of data science, climate, and sustainable systems. Welcome!
       </p>
       <!-- <p>
         Read the blog posts or check
@@ -133,7 +133,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-4 inline-block text-3xl sm:my-8 sm:text-5xl;
   }
   #hero img {
-    @apply mb-4;
+    @apply mb-6;
   }
   #hero .rss-link {
     @apply mb-6;
@@ -142,7 +142,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
   }
   #hero p {
-    @apply my-2;
+    @apply mb-4;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;

@@ -17,7 +17,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
   };
 
   return (
-    <li className="my-6" style={{ borderWidth: "1px", borderRadius: 5, padding: "1rem"}}>
+    <li className="my-6 p-4 border rounded-md dark:border-gray-600">
       <a
         href={href}
         className="inline-block mb-2 text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"

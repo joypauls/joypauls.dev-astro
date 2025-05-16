@@ -5,8 +5,8 @@ export const SITE: Site = {
   author: "Joy Paulsen",
   profile: "https://joypaulsen.com/",
   desc: "Understanding the science of modern photography.",
-  title: "Deconvoluted",
-  ogImage: "assets/pixellated_gradient.jpg",
+  title: "joypauls.dev",
+  ogImage: "assets/DSC02111.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,
@@ -26,7 +26,7 @@ export const LOCALE = {
 } as const;
 
 export const LOGO_IMAGE = {
-  enable: true,
+  enable: false,
   svg: true,
   width: 40,
   height: 40,
@@ -35,7 +35,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/joypauls",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -43,17 +43,17 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
+    active: false,
   },
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.linkedin.com/in/joy-paulsen-0bb55419b/",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
