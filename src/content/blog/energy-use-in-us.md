@@ -9,7 +9,7 @@ tags:
   - beginner
   - photography
 description:
-  Visualizing our measurements and estimates of atmospheric carbon dioxide through time
+  Tracking the transition away from fossil fuels at the national level
 ---
 
 <!-- ## Table of Contents -->
@@ -17,33 +17,54 @@ description:
 
 ## Energy
 
+The United States accounts for 15% of the world's total energy consumption, despite being home to only 4% of the world's population. It is critically important to understand and 
+
 The data used throughout this entire post is from [Our World in Data](https://ourworldindata.org/energy), which is originally sourced from the International Energy Agency (IEA).
 
-![something](@assets/blog/energy-use-in-us/us_energy.png)
+## Energy Sources
+
+![something](@assets/blog/energy-use-in-us/energy_use.png)
+
+Although the vast majority of energy still comes from fossil fuels, fossil fuel usage peaked in 2007 and has been decreasing ever since. Total energy usage has been fairly flat, due in part to the growth of renewables. This is not the whole story though - the transition from fossil fuels to renewables becomes even more clear after adjusting for population growth.
+
+
+![something](@assets/blog/energy-use-in-us/ff_vs_renewables.png)
+
+
+In fact, fossil fuel usage per person has been decreasing since the 70's! Nuclear filled the gap for a while until, starting in 2000, renewables took off. Notice the different scales on the left and right axes: despite the growth, an order of magnitude seperates us from living in a renewables-dominant world.
 
 
 
-![something](@assets/blog/energy-use-in-us/us_renewable_energy.png)
+
+## Renewables on the Rise
+
+Renewable energy use increased by over 150% in the first two decades of the 21st century.
+
+![something](@assets/blog/energy-use-in-us/renewable_energy_use.png)
+
+It's important to note that this chart shows energy consumption across all sectors, but we don't utilize each source equally across sectors. The growth in biofuels is primarily driven by its use in the transportation sector, for example.
+
+### Electricity
+
+To truly appreciate the growth in renewables, it is
+
+![something](@assets/blog/energy-use-in-us/renewable_electricity_growth.png)
 
 
-
-## Exposure Bracketing
-
-Capturing multiple photos of the same scene while varying the exposure level is called exposure bracketing. This is usually done by varying the shutter speed, since we need the aperture to stay constant.
-
-![something](@assets/blog/understanding-hdr/Untitled.png)
+But it's not enough. X% of our electricity is still generated from fossil fuels
 
 
-## Merging
+## How We Stack Up
 
-![something](@assets/blog/understanding-hdr/Untitled2.png)
+Returning to the topic of primary energy consumption, let's take a look at how the United States energy use compares to the rest of the world.
+
+![something](@assets/blog/energy-use-in-us/energy_use_country_2023.png)
 
 
-## Final Product
+We saw earlier that adjusting for population can sometimes provide a useful perspective when it comes to energy consumption. It is hardly surprising that China consumes more energy than the U.S. when we consider that China has X times the population! However, the U.S. comes out on top in terms of energy use per person. We see that even just U.S. fossil fuel consumption per capita dwarfs the totals of the other top economies.
 
-![something](@assets/blog/understanding-hdr/Untitled3.png)
+![something](@assets/blog/energy-use-in-us/energy_use_country_capita_2023.png)
 
-![something](@assets/blog/understanding-hdr/Untitled4.png)
 
 
 
