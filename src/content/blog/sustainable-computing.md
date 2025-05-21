@@ -1,14 +1,14 @@
 ---
 author: Joy Paulsen
-pubDatetime: 2025-05-17T19:00:00Z
-title: Energy Use in the U.S.
-slug: energy-use-in-us
+pubDatetime: 2025-05-20T19:00:00Z
+title: Thinking About Sustainable Computing
+slug: sustainable-computing
 featured: true
 draft: false
 tags:
-  - energy
+  - sustainability
 description:
-  Checking in on the transition away from fossil fuels at the national level
+  What you need to know about the climate costs of compute
 ---
 
 <!-- ## Table of Contents -->
