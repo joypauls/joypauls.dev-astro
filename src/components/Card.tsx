@@ -28,8 +28,10 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
           <h3 {...headerProps}>{title}</h3>
         )}
       </a>
-      <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
-      <p className="text-sm">{description}</p>
+      <p className="text-sm mb-2">{description}</p>
+      <div className="">
+        <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
+      </div>
     </li>
   );
 }
