@@ -4,9 +4,9 @@ export const SITE: Site = {
   website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
   author: "Joy Paulsen",
   profile: "https://joypaulsen.com/",
-  desc: "Understanding the science of modern photography.",
+  desc: "joypauls.dev",
   title: "joypauls.dev",
-  ogImage: "assets/DSC02111.jpg",
+  ogImage: "assets/DSC05914.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,
