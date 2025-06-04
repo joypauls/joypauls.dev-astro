@@ -4,8 +4,9 @@ pubDatetime: 2025-05-17T19:00:00Z
 title: Energy Use in the U.S.
 slug: energy-use-in-us
 featured: true
-draft: false
+draft: true
 tags:
+  - analysis
   - energy
 description:
   Checking in on the transition away from fossil fuels at the national level
@@ -14,15 +15,31 @@ description:
 <!-- ## Table of Contents -->
 
 
-## Energy
+<!-- ## Energy -->
 
-The United States accounts for 15% of the world's total energy consumption, despite being home to only 4% of the world's population. It is critically important to understand and 
+The United States accounts for 15% of the world's total energy consumption, despite being home to only 4% of the world's population. It is critically important to understand and address opportunities in the U.S.'s use of energy if we want to decarbonize the world. At the end, we'll see just how much energy we use compared to other big economies.
 
 The data used throughout this entire post is from [Our World in Data](https://ourworldindata.org/energy), which is originally sourced from the International Energy Agency (IEA).
 
-## Energy Sources
+## Energy Consumption
+
+In this discussion I'll focus mostly on [primary energy consumption](https://www.eia.gov/tools/glossary/index.php?id=Primary%20energy). The most important thing to know about it is that we are looking at energy consumption for any purpose; that includes energy used for fuel for transportation, energy converted into electricity, and anything in between. I like to think of it as loooking at the raw inputs into our energy ecosystem.
 
 ![something](@assets/blog/energy-use-in-us/energy_use.png)
+
+
+Looking at this chart, it's clear that fossil fuels (oil, coal, and natural gas) still dominate our lives.
+
+
+
+| Energy Source | 1970 Share    | 2023 Share   |
+| --- | --- | --- |
+| Oil | 44.9% | 38.0% |
+| Gas | 31.6% | 33.8% |
+| Coal | 18.8% | 8.7% |
+| Renewables | 4.4% | 11.7% |
+| Nuclear | 0.4% | 7.8% |
+
 
 Although the vast majority of energy still comes from fossil fuels, fossil fuel usage peaked in 2007 and has been decreasing ever since. Total energy usage has been fairly flat, due in part to the growth of renewables. This is not the whole story though - the transition from fossil fuels to renewables becomes even more clear after adjusting for population growth.
 
@@ -30,7 +47,7 @@ Although the vast majority of energy still comes from fossil fuels, fossil fuel 
 ![something](@assets/blog/energy-use-in-us/ff_vs_renewables.png)
 
 
-In fact, fossil fuel usage per person has been decreasing since the 70's! Nuclear filled the gap for a while until, starting in 2000, renewables took off. Notice the different scales on the left and right axes: despite the growth, an order of magnitude seperates us from living in a renewables-dominant world.
+In fact, fossil fuel usage per person has been decreasing since the 70's! Nuclear filled the gap for a while until, starting around 2000, renewables began to take off. Notice the different scales on the left and right axes: despite the growth, an order of magnitude seperates us from living in a renewables-dominant world.
 
 
 
@@ -41,11 +58,11 @@ Renewable energy use increased by over 150% in the first two decades of the 21st
 
 ![something](@assets/blog/energy-use-in-us/renewable_energy_use.png)
 
-It's important to note that this chart shows energy consumption across all sectors, but we don't utilize each source equally across sectors. The growth in biofuels is primarily driven by its use in the transportation sector, for example.
+It's important to remember that so far we have been looking energy consumption across all sectors, but we don't utilize each source equally across sectors. The growth in biofuels is primarily driven by its use in the transportation sector, for example.
 
 ### Electricity
 
-To truly appreciate the growth in renewables, it is helpful to zoom in on electricity generation, where renewable energy shines. 
+To truly appreciate the growth in renewables, it is helpful to briefly zoom in on electricity generation, where renewable energy shines. 
 
 ![something](@assets/blog/energy-use-in-us/renewable_electricity_growth.png)
 
@@ -67,156 +84,3 @@ We saw earlier that adjusting for population can sometimes provide a useful pers
 ![something](@assets/blog/energy-use-in-us/energy_use_country_capita_2023.png)
 
 
-
-
-## Frontmatter
-
-Frontmatter is the main place to store some important information about the blog post (article). Frontmatter lies at the top of the article and is written in YAML format. Read more about frontmatter and its usage in [astro documentation](https://docs.astro.build/en/guides/markdown-content/).
-
-Here is the list of frontmatter property for each post.
-
-| Property           | Description                                                                                 | Remark                                        |
-| ------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| **_title_**        | Title of the post. (h1)                                                                     | required<sup>\*</sup>                         |
-| **_description_**  | Description of the post. Used in post excerpt and site description of the post.             | required<sup>\*</sup>                         |
-| **_pubDatetime_**  | Published datetime in ISO 8601 format.                                                      | required<sup>\*</sup>                         |
-| **_modDatetime_**  | Modified datetime in ISO 8601 format. (only add this property when a blog post is modified) | optional                                      |
-| **_author_**       | Author of the post.                                                                         | default = SITE.author                         |
-| **_slug_**         | Slug for the post. This field is optional but cannot be an empty string. (slug: ""❌)       | default = slugified file name                 |
-| **_featured_**     | Whether or not display this post in featured section of home page                           | default = false                               |
-| **_draft_**        | Mark this post 'unpublished'.                                                               | default = false                               |
-| **_tags_**         | Related keywords for this post. Written in array yaml format.                               | default = others                              |
-| **_ogImage_**      | OG image of the post. Useful for social media sharing and SEO.                              | default = SITE.ogImage or generated OG image  |
-| **_canonicalURL_** | Canonical URL (absolute), in case the article already exists on other source.               | default = `Astro.site` + `Astro.url.pathname` |
-
-> Tip! You can get ISO 8601 datetime by running `new Date().toISOString()` in the console. Make sure you remove quotes though.
-
-Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
-
-Title and description (excerpt) are important for search engine optimization (SEO) and thus AstroPaper encourages to include these in blog posts.
-
-`slug` is the unique identifier of the url. Thus, `slug` must be unique and different from other posts. The whitespace of `slug` should to be separated with `-` or `_` but `-` is recommended. Slug is automatically generated using the blog post file name. However, you can define your `slug` as a frontmatter in your blog post.
-
-For example, if the blog file name is `adding-new-post.md` and you don't specify the slug in your frontmatter, Astro will automatically create a slug for the blog post using the file name. Thus, the slug will be `adding-new-post`. But if you specify the `slug` in the frontmatter, this will override the default slug. You can read more about this in [Astro Docs](https://docs.astro.build/en/guides/content-collections/#defining-custom-slugs).
-
-If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post. You can set the default tag in the `/src/content/config.ts` file.
-
-```ts
-// src/content/config.ts
-export const blogSchema = z.object({
-  // ---
-  draft: z.boolean().optional(),
-  tags: z.array(z.string()).default(["others"]), // replace "others" with whatever you want
-  // ---
-});
-```
-
-### Sample Frontmatter
-
-Here is the sample frontmatter for a post.
-
-```yaml
-# src/content/blog/sample-post.md
----
-title: The title of the post
-author: your name
-pubDatetime: 2022-09-21T05:17:19Z
-slug: the-title-of-the-post
-featured: true
-draft: false
-tags:
-  - some
-  - example
-  - tags
-ogImage: ""
-description: This is the example description of the example post.
-canonicalURL: https://example.org/my-article-was-already-posted-here
----
-```
-
-## Adding table of contents
-
-By default, a post (article) does not include any table of contents (toc). To include toc, you have to specify it in a specific way.
-
-Write `Table of contents` in h2 format (## in markdown) and place it where you want it to be appeared on the post.
-
-For instance, if you want to place your table of contents just under the intro paragraph (like I usually do), you can do that in the following way.
-
-```md
----
-# some frontmatter
----
-
-Here are some recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
-
-## Table of contents
-
-<!-- the rest of the post -->
-```
-
-## Headings
-
-There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
-
-This rule is not mandatory, but highly recommended for visual, accessibility and SEO purposes.
-
-## Storing Images for Blog Content
-
-Here are two methods for storing images and displaying them inside a markdown file.
-
-> Note! If it's a requirement to style optimized images in markdown you should [use MDX](https://docs.astro.build/en/guides/images/#images-in-mdx-files).
-
-### Inside `src/assets/` directory (recommended)
-
-You can store images inside `src/assets/` directory. These images will be automatically optimized by Astro through [Image Service API](https://docs.astro.build/en/reference/image-service-reference/).
-
-You can use relative path or alias path (`@assets/`) to serve these images.
-
-Example: Suppose you want to display `example.jpg` whose path is `/src/assets/images/example.jpg`.
-
-```md
-![something](@assets/images/example.jpg)
-
-<!-- OR -->
-
-![something](../../assets/images/example.jpg)
-
-<!-- Using img tag or Image component won't work ❌ -->
-<img src="@assets/images/example.jpg" alt="something">
-<!-- ^^ This is wrong -->
-```
-
-> Technically, you can store images inside any directory under `src`. In here, `src/assets` is just a recommendation.
-
-### Inside `public` directory
-
-You can store images inside the `public` directory. Keep in mind that images stored in the `public` directory remain untouched by Astro, meaning they will be unoptimized and you need to handle image optimization by yourself.
-
-For these images, you should use an absolute path; and these images can be displayed using [markdown annotation](https://www.markdownguide.org/basic-syntax/#images-1) or [HTML img tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img).
-
-Example: Assume `example.jpg` is located at `/public/assets/images/example.jpg`.
-
-```md
-![something](/assets/images/example.jpg)
-
-<!-- OR -->
-
-<img src="/assets/images/example.jpg" alt="something">
-```
-
-## Bonus
-
-### Image compression
-
-When you put images in the blog post (especially for images under `public` directory), it is recommended that the image is compressed. This will affect the overall performance of the website.
-
-My recommendation for image compression sites.
-
-- [TinyPng](https://tinypng.com/)
-- [TinyJPG](https://tinyjpg.com/)
-
-### OG Image
-
-The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
-
-> Since AstroPaper v1.4.0, OG images will be generated automatically if not specified. Check out [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).

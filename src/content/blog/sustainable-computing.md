@@ -4,7 +4,7 @@ pubDatetime: 2025-05-20T19:00:00Z
 title: Thinking About Sustainable Computing
 slug: sustainable-computing
 featured: true
-draft: false
+draft: true
 tags:
   - sustainability
 description:

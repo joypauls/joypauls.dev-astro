@@ -4,7 +4,7 @@ pubDatetime: 2025-02-23T19:00:00Z
 title: Understanding HDR
 slug: understanding-hdr
 featured: true
-draft: false
+draft: true
 tags:
   - computational photography
 description:

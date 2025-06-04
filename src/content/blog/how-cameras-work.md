@@ -4,7 +4,7 @@ pubDatetime: 2025-02-25T19:00:00Z
 title: How Cameras Work in 5 Minutes
 slug: how-cameras-work
 featured: true
-draft: false
+draft: true
 tags:
   - beginner
   - photography
