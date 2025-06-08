@@ -56,6 +56,18 @@ async function loadGoogleFonts(
       weight: 700,
       style: "bold",
     },
+    // {
+    //   name: "Montserrat",
+    //   font: "Montserrat",
+    //   weight: 400,
+    //   style: "normal",
+    // },
+    // { 
+    //   name: "Montserrat",
+    //   font: "Montserrat:wght@700",
+    //   weight: 700,
+    //   style: "bold",
+    // },
   ];
 
   const fonts = await Promise.all(

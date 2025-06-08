@@ -15,9 +15,9 @@ const { noMarginTop = false } = Astro.props;
   <Hr noPadding />
   <div class="footer-wrapper">
     <Socials centered />
-    <div class="copyright-wrapper prose">
-      <span>Copyright &#169; {currentYear}</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
+    <div class="copyright-wrapper">
+      <p>Copyright &#169; {currentYear}</p>
+      <p class="separator">&nbsp;|&nbsp;</p>
       <!-- <span>All rights reserved.</span> -->
        <a href="https://joypaulsen.com/" target="_blank">Joy Paulsen</a>
     </div>
@@ -38,7 +38,10 @@ const { noMarginTop = false } = Astro.props;
     @apply scale-125;
   }
   .copyright-wrapper {
-    @apply my-2 flex flex-col items-center whitespace-nowrap sm:flex-row;
+    @apply my-2 flex flex-col items-center whitespace-nowrap sm:flex-row text-sm sm:text-base;
+  }
+  .copyright-wrapper a {
+    @apply underline hover:text-skin-accent;
   }
   .separator {
     @apply hidden sm:inline;
