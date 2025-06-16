@@ -4,14 +4,27 @@ pubDatetime: 2025-06-12T19:00:00Z
 title: CAISO Hourly Demand Dataset
 slug: caiso-demand-dataset
 featured: true
-draft: false
+draft: true
 tags:
   - data
+  - analysis
 description:
   An open and informative dataset useful for learning and experimentation
 ---
 
 <!-- ## Table of Contents -->
+
+
+## Positioning
+
+A case study in large-scale load dynamics
+
+
+## Exogenous Variables
+
+show heat wave 2022
+
+---
 
 
 <!-- ## Energy -->
