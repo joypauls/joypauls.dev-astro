@@ -7,6 +7,7 @@ featured: true
 draft: false
 tags:
   - energy
+  - data
 description:
   A brief check-in on the transition away from fossil fuels at the national level
 ---
