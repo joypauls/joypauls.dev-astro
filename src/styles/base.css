@@ -132,4 +132,8 @@
   }
 }
 
+.prose a {
+  text-underline-offset: 6px;
+}
+
 
