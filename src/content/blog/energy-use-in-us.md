@@ -1,8 +1,8 @@
 ---
 author: Joy Paulsen
 pubDatetime: 2025-06-07T19:00:00Z
-title: Energy Use in the U.S.
-slug: energy-use-in-us
+title: Energy Consumption in the U.S.
+slug: energy-consumption-in-us
 featured: true
 draft: false
 tags:
