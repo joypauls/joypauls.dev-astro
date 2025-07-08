@@ -51,8 +51,6 @@ Luckily, [Minnesota](https://www.eia.gov/state/?sid=MN) is not starting from squ
 
 ![MN Electricity Generation Mix](@assets/blog/mn-ces/mn_mix.png)
 
-## Work to Do
-
 Minnesota’s CES sets a bold target and puts the state in the company of climate leaders like California and New York. But as with any big climate law, it's all about implementation. 2030 is just around the corner. What happens next will depend on strong policy follow-through, local innovation, and continued public support.
 
 
