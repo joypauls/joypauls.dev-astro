@@ -83,7 +83,7 @@ As California’s grid [evolves](https://www.caiso.com/about/our-business/managi
 - **Large-scale energy storage**: limited temporal decoupling of supply and demand
 - **Smart meters and demand response**: enabling dynamic management of load at the household level
 
-As these technologies are transforming grid operations, the ability to interpret demand patterns and forecast future load accurately will remain critical for reliability and for enabling deeper decarbonization. Open data from ISOs like CAISO helps us understand the past and build tools that can support a smarter, cleaner grid.
+As these technologies transform grid operations, the ability to interpret demand patterns and forecast future load accurately will remain critical for reliability and for enabling deeper decarbonization. Open data from ISOs like CAISO helps us understand the past and build tools that can support a smarter, cleaner grid.
 
 ---
 
