@@ -10,9 +10,8 @@ tags:
   - analysis
   - electricity
 description:
-  Understanding the cycles and variability in California electricity demand with open data 
+  Visualizing the cycles and variability in California electricity demand using open data 
 ---
-
 
 ## Background
 
@@ -77,7 +76,7 @@ The highest average load seen throughout the year in 2024 occurred in July at 6 
 
 ## Into the Future
 
-As California’s grid evolves, these patterns won’t stay static. Several major forces are driving [structural change](https://www.caiso.com/about/our-business/managing-the-evolving-grid):
+As California’s grid [evolves](https://www.caiso.com/about/our-business/managing-the-evolving-grid), these patterns won’t stay static. Several major forces are driving structural change across the country:
 
 - **Prosumers**: households and businesses that both generate and consume power (e.g. rooftop solar)
 - **Distributed Energy Resources (DERs)**: small-scale generation and storage deployed throughout the grid
