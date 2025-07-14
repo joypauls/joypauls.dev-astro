@@ -41,39 +41,17 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <span class="sr-only">RSS Feed</span>
       </a> -->
 
-      <img src="/assets/DSC05914.jpg" alt="mountain" />
+      <figure>
+        <img src="/assets/DSC05914.jpg" alt="Icelandic mountain" />
+        <figcaption>Múlagljúfur Canyon, Iceland</figcaption>
+      </figure>
 
       <p>
-        Exploring how data, computation, and technology can help shape our understanding of and response 
-        to the climate crisis, with a focus on making complex topics approachable.
+        Exploring how data and computation can help us understand and reimagine 
+        the energy systems at the heart of a sustainable future, with a focus on
+        making technical topics approachable.
       </p>
 
-      <!-- <p>
-        Exploring how data and computation can help shape our understanding and response 
-        to the climate crisis, while also digging into the day-to-day of coding, building, 
-        and learning along the way.
-      </p> -->
-
-
-
-      <!-- <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p> -->
-      <!-- {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      } -->
     </section>
 
     <Hr />
@@ -142,8 +120,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     /* @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl; */
     @apply my-4 inline-block text-3xl sm:my-8 sm:text-5xl;
   }
-  #hero img {
-    @apply mb-6;
+  #hero figure {
+    @apply mb-4 text-right;
+  }
+  #hero figcaption {
+    @apply mt-2 text-xs text-gray-400;
   }
   #hero .rss-link {
     @apply mb-6;
