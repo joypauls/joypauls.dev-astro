@@ -78,10 +78,9 @@ The highest average load seen throughout the year in 2024 occurred in July at 6 
 
 As California’s grid [evolves](https://www.caiso.com/about/our-business/managing-the-evolving-grid), these patterns won’t stay static. Several major forces are driving structural change across the country:
 
-- **Prosumers**: households and businesses that both generate and consume power (e.g. rooftop solar)
-- **Distributed Energy Resources (DERs)**: small-scale generation and storage deployed throughout the grid
+- **Prosumers and Distributed Energy Resources (DERs)**: households, businesses, and small-scale systems that generate, store, and consume electricity (e.g. rooftop solar)
 - **Large-scale energy storage**: limited temporal decoupling of supply and demand
-- **Smart meters and demand response**: enabling dynamic management of load at the household level
+- **Smart meters and demand response**: enabling dynamic management of electricity use at the household level
 
 As these technologies transform grid operations, the ability to interpret demand patterns and forecast future load accurately will remain critical for reliability and for enabling deeper decarbonization. Open data from ISOs like CAISO helps us understand the past and build tools that can support a smarter, cleaner grid.
 
