@@ -23,27 +23,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <!-- <h1>Welcome!</h1> -->
-      <!-- <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-        <span class="sr-only">RSS Feed</span>
-      </a> -->
+      <h1>Joy Paulsen</h1>
 
       <figure>
         <img src="/assets/DSC02111.jpg" alt="Icelandic mountain range" />
-        <!-- <figcaption>Múlagljúfur Canyon, Iceland</figcaption> -->
+        <figcaption>Múlagljúfur Canyon, Iceland</figcaption>
       </figure>
 
       <p>
@@ -97,14 +81,14 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts/">
+      <a href="/posts/" class="all-posts-btn">
         All Posts
-        <svg xmlns="http://www.w3.org/2000/svg"
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
           ><path
             d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
           ></path>
         </svg>
-      </LinkButton>
+      </a>
     </div>
   </main>
 
@@ -117,8 +101,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply pb-6 pt-8;
   }
   #hero h1 {
-    /* @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl; */
-    @apply my-4 inline-block text-3xl sm:my-8 sm:text-5xl;
+    @apply mb-6 mt-2 block text-4xl font-semibold tracking-tight sm:text-5xl;
   }
   #hero figure {
     @apply mb-8;
@@ -128,7 +111,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     aspect-ratio: 16 / 7;
   }
   #hero figcaption {
-    @apply mt-2 text-xs text-gray-400;
+    @apply mt-2 text-xs italic opacity-50;
   }
   #hero .rss-link {
     @apply mb-6;
@@ -160,5 +143,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   .all-posts-btn-wrapper {
     @apply my-8 text-center;
+  }
+  .all-posts-btn {
+    @apply inline-flex items-center gap-2 border border-skin-accent px-5 py-2 text-sm font-medium text-skin-accent transition-colors duration-200 hover:bg-skin-accent hover:text-skin-inverted;
+  }
+  .all-posts-btn svg {
+    @apply !h-4 !w-4 transition-colors duration-200;
+    fill: rgb(var(--color-accent));
+  }
+  .all-posts-btn:hover svg {
+    fill: rgb(var(--color-fill));
   }
 </style>
