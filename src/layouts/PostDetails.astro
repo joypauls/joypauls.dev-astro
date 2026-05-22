@@ -80,6 +80,20 @@ const nextPost =
     <h1 transition:name={slugifyStr(title)} class="post-title inline-block text-3xl sm:text-4xl leading-tight">
       {title}
     </h1>
+    {tags.length > 0 && (
+      <ul class="mt-3 flex flex-wrap gap-2">
+        {tags.map(tag => (
+          <li>
+            <a
+              href={`/tags/${slugifyStr(tag)}/`}
+              class="text-xs px-2 py-0.5 rounded-sm bg-skin-accent/15 text-skin-accent font-medium hover:bg-skin-accent hover:text-skin-inverted transition-colors duration-150"
+            >
+              {tag}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
     <hr class="my-8 border-skin-line opacity-60" />
     <Datetime
       pubDatetime={pubDatetime}

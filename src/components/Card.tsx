@@ -18,7 +18,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
   };
 
   return (
-    <li className="my-5 rounded-sm bg-skin-card shadow-sm transition-all duration-200 hover:shadow-md hover:translate-y-[-2px]">
+    <li className="post-card my-5 rounded-sm bg-skin-card border border-transparent shadow-sm transition-all duration-200 hover:border-skin-accent hover:translate-y-[-2px]">
       <a
         href={href}
         className="block p-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-skin-accent"
