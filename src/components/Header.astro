@@ -166,7 +166,7 @@ const { activeNav } = Astro.props;
     @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
   }
   .logo {
-    @apply absolute py-1 text-lg font-semibold sm:static sm:text-xl;
+    @apply absolute top-1/2 -translate-y-1/2 py-1 font-sans text-xl font-semibold tracking-tight sm:static sm:translate-y-0 sm:text-2xl;
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
@@ -195,7 +195,7 @@ const { activeNav } = Astro.props;
     @apply col-span-1;
   }
   nav .active {
-    @apply underline underline-offset-4;
+    @apply text-skin-accent underline underline-offset-4;
   }
   nav a.active svg {
     @apply fill-skin-accent;

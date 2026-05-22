@@ -121,7 +121,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-4 inline-block text-3xl sm:my-8 sm:text-5xl;
   }
   #hero figure {
-    @apply mb-6 text-right;
+    @apply mb-8;
+  }
+  #hero figure img {
+    @apply w-full rounded-sm object-cover shadow-md;
+    aspect-ratio: 16 / 7;
   }
   #hero figcaption {
     @apply mt-2 text-xs text-gray-400;
@@ -133,7 +137,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
   }
   #hero p {
-    @apply mb-4;
+    @apply mb-4 text-lg leading-relaxed;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
@@ -149,7 +153,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   #featured h2,
   #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
+    @apply font-sans text-2xl font-semibold tracking-tight;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid rgb(var(--color-accent));
   }
   .all-posts-btn-wrapper {
     @apply my-8 text-center;
