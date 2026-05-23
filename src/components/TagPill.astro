@@ -1,0 +1,23 @@
+---
+export interface Props {
+  tag: string;
+  tagName: string;
+  count?: number;
+}
+
+const { tag, tagName, count } = Astro.props;
+---
+
+<a href={`/tags/${tag}/`} class="tag-pill">
+  {tagName}
+  {count !== undefined && <span class="tag-count">{count}</span>}
+</a>
+
+<style>
+  .tag-pill {
+    @apply inline-flex items-center gap-1.5 rounded-sm bg-skin-accent/15 px-3 py-1 text-sm font-medium text-skin-accent transition-colors duration-150 hover:bg-skin-accent hover:text-skin-inverted;
+  }
+  .tag-count {
+    @apply text-xs opacity-60;
+  }
+</style>

@@ -5,19 +5,23 @@ import postFilter from "./postFilter";
 interface Tag {
   tag: string;
   tagName: string;
+  count: number;
 }
 
-const getUniqueTags = (posts: CollectionEntry<"blog">[]) => {
-  const tags: Tag[] = posts
-    .filter(postFilter)
-    .flatMap(post => post.data.tags)
-    .map(tag => ({ tag: slugifyStr(tag), tagName: tag }))
-    .filter(
-      (value, index, self) =>
-        self.findIndex(tag => tag.tag === value.tag) === index
-    )
-    .sort((tagA, tagB) => tagA.tag.localeCompare(tagB.tag));
-  return tags;
+const getUniqueTags = (posts: CollectionEntry<"blog">[]): Tag[] => {
+  const filtered = posts.filter(postFilter);
+  const countMap: Record<string, Tag> = {};
+  for (const post of filtered) {
+    for (const tagName of post.data.tags) {
+      const tag = slugifyStr(tagName);
+      if (countMap[tag]) {
+        countMap[tag].count++;
+      } else {
+        countMap[tag] = { tag, tagName, count: 1 };
+      }
+    }
+  }
+  return Object.values(countMap).sort((a, b) => a.tag.localeCompare(b.tag));
 };
 
 export default getUniqueTags;
